@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>REGISTRATION</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+
+<body>
+    <center>
+
+    <br><br>
+    <h1> REGISTRATION</h1>
+    <br>
+
+    <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Enter Name" pattern="[A-Za-z]{7}"><br><br>
+        <input type="number" name="mobile" placeholder="Enter mobile number" maxlength="10"><br><br>
+        <input type="password" name="password" placeholder="Enter Password">
+        <input type="password" name="cpassword" placeholder="Confirm Password"><br><br>
+        <input type="text" name="address" placeholder="Address"><br><br>
+        Upload Image: <input type="file" name="photo"><br><br>
+        Select role: <select name="role">
+            <option value="1">Voter</option>
+            <option value="2">Candidate</option>
+
+        </select>
+        <br><br>
+        <button style="
+        border-radius: 5px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 5px;">
+
+            Register</button><br><br>
+        Already User? <a href="../index.html">Login Here</a>
+    </form>
+    </center>
+</body>
+
+</html>

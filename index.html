@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Online Voting System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+    <center>
+    <div id="headerSection">
+       <H1> ONLINE VOTING SYSTEM</H1>
+
+        <h2>SIGN-IN</h2>
+
+    </div><BR>
+
+    <div id="bodySection">
+
+        <form action="api/login.php" method="POST">
+
+            <input type="number" name="mobile" placeholder="Enter mobile number"><br><br><br>
+            <input type="password" name="password" placeholder="Enter password"><br><br><br>
+            <select id="dropbox" name="role">
+                <option value="1">Voter</option>
+                <option value="2">Candidate</option>
+            </select><br><br>
+            <button id="loginbtn" type="submit">Login</button><br><br>
+            New user ? <a href="routes/register.html">Register Here</a>
+
+        </form>
+    </div>
+    </center>
+
+
+
+</body>
+
+</html>
