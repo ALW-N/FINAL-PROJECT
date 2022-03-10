@@ -1,0 +1,36 @@
+body{
+
+    background-image: url("login page.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+#headerSection {
+padding: 10px;
+}
+#headerSection{
+    font-family: 'Oswald', sans-serif;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+
+}
+#dropbox{
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+
+}
+#loginbtn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+}
