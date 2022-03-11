@@ -1,43 +1,68 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <title>Online Voting System</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed:wght@300&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
-
 </head>
 
-<body>
-    <center>
-    <div id="headerSection">
-       <H1> ONLINE VOTING SYSTEM</H1>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body style="background-color: #666666;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" action="api/login.php" method="POST">
+					<span class="login100-form-title p-b-43">
+						Login to continue
+					</span>
+					
+					
+					<div class="wrap-input100 validate-input" >
+						<input class="input100" type="number" name="mobile" >
+						<span class="focus-input100"></span>
+						<span class="label-input100">Number</span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Password</span>
+					</div>
 
-        <h2>SIGN-IN</h2>
 
-    </div><BR>
+					<div>
+						<select id="dropbox" name="role" >
+							<option value="1"class="label-input100">Voter </option>
+							<option value="2"class="label-input100">Candidate</option>
+						</select><br><br>
+					</div>
 
-    <div id="bodySection">
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" id="loginbtn" type="submit">Login</button><br><br>
 
-        <form action="api/login.php" method="POST">
+					</div>
+					
+					<div class="text-center p-t-46 p-b-20">
+						New user ? <a href="routes/register.html">Register Here</a>
+					
+					</div>
 
-            <input type="number" name="mobile" placeholder="Enter mobile number"><br><br><br>
-            <input type="password" name="password" placeholder="Enter password"><br><br><br>
-            <select id="dropbox" name="role">
-                <option value="1">Voter</option>
-                <option value="2">Candidate</option>
-            </select><br><br>
-            <button id="loginbtn" type="submit">Login</button><br><br>
-            New user ? <a href="routes/register.html">Register Here</a>
+				
+				</form>
 
-        </form>
-    </div>
-    </center>
-
-
-
+				<div class="login100-more" style="background-image: url('images/bg-01.jpg');">
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
-
+</html>
 </html>
